@@ -1,0 +1,220 @@
+*{
+    font-family: "roboto", sans-serif;
+}
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar a:hover{
+    color: orange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("baloons.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+}
+#article2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    line-height: 0.5;
+    color: rgba(38, 58, 87, 0.9);
+    padding-right: 40%;
+    font-size: 8rem;
+    height: 30vh;
+}
+
+.hold{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(38, 58, 87, 0.9);
+    padding-top: 4%;
+}
+
+.imagetext{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+}
+.container aside img{
+    height: 37vh;
+    width: 30vw;
+}
+.float{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 20vw;
+    padding: 1.5%;
+    
+}
+
+.float a{
+    border: 1px solid rgb(0, 123, 255);
+    padding: 1%;
+    color: rgb(0, 119, 255);
+}
+.float h2{
+    margin-bottom: 10%;
+}
+
+#float1{
+    bottom: -2%;
+    left: 25%;
+}
+
+#float2{
+    bottom: 0%;
+    left: 75%;
+}
+
+#float3{
+    bottom: -52%;
+    left: 25%;
+}
+
+#float4{
+    bottom: -47%;
+    left: 75%;
+}
+
+#float5{
+    bottom: -100%;
+    left: 25%;
+}
+
+#float6{
+    bottom: -96%;
+    left: 75%;
+}
+
+#float7{
+    bottom: -149%;
+    left: 25%;
+}
+
+#float8{
+    bottom:-150%;
+    left: 75%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.float a:hover{
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+#footerp1{
+    display: flex;
+    justify-items: flex-end;
+}
+#footerp1 article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    line-height: 0.3;
+    flex-direction: column;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"], textarea[name="message"], input[type="email"] {
+    background-color: black;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px green solid;
+    color: white;
+
+}
+
+#inputsp1, #inputsp2, #inputsp3{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#inputsp1 .input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+#footcont{
+    font-size: 3rem;
+    font-weight: 200 !important;
+}
+#footerinline{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#footerinline a{
+    padding: 2%;
+}
+#footerinline article{
+    display: flex;
+    justify-content: flex-end;
+}

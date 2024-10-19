@@ -1,0 +1,141 @@
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar a:hover{
+    color: orange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("sec1img1.JPG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100vw;
+}
+#intro article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    padding-right: 20%;
+    color: whitesmoke;
+}
+#outside{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 228, 196, 0.838);
+    width: 95vw;
+}
+#inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+#inside p{
+    text-align: center;
+}
+
+iframe{
+    height: 30vh;
+    width: 30vw;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+#footerp1{
+    display: flex;
+    justify-items: flex-end;
+}
+#footerp1 article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    line-height: 0.3;
+    flex-direction: column;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"], textarea[name="message"], input[type="email"] {
+    background-color: black;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px green solid;
+    color: white;
+
+}
+
+#inputsp1, #inputsp2, #inputsp3{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#inputsp1 .input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+#footcont{
+    font-size: 3rem;
+    font-weight: 200 !important;
+}
+#footerinline{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#footerinline a{
+    padding: 2%;
+}
+#footerinline article{
+    display: flex;
+    justify-content: flex-end;
+}

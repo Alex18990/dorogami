@@ -1,0 +1,261 @@
+*{
+    font-family: "roboto", sans-serif;
+}
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar a:hover{
+    color: orange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 6rem;
+}
+
+main #article2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 5%;
+    line-height: 0.5;
+    padding-right: 40%;
+    color: #14313E;
+}
+a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+    background-color: #14313E;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#text article{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    line-height: 1.6;
+}
+
+.textimage{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 111, 145);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.textout, .imageout{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.textout, .imageout2{
+    padding-right: 3%;
+}
+.imageout, .textin2{
+    padding-left: 3%;
+}
+.textin{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 60%;
+}
+.imagein{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.imagein img, .imagein2 img{
+    width: 50%;
+    height: 90%;
+}
+
+
+.textout2, .imageout2{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.imagein2{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.textin2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 60%;
+}
+
+.textimage .textout a{
+    margin-right: 20%;
+    background-color: rgb(1, 62, 1);
+    padding: 1.5%;
+    border-radius: 15px;
+}
+
+.textimage .textout2 a{
+    margin-left: 20%;
+    background-color: rgb(1, 62, 1);
+    padding: 1.5%;
+    border-radius: 15px;
+}
+
+.bar{
+    background-color: rgb(85, 111, 145);
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+#five{
+    background-color: #3b586b;
+}
+#vatas{
+    background-color: #3c5454;
+}
+#pitta{
+    background-color: #536e7c;
+}
+
+#green{
+    background-color: #4a6863;
+}
+#vatapitta{
+    background-color: #14313E;
+}
+#purple{
+    background-color: #3b586b;
+}
+#fire{
+    background-color: #536e7c; 
+}
+#table{
+    background-color: #4a6863; 
+}
+#time{
+    background-color: #536e7c;
+}
+#eagle{
+    background-color: #14313E;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+#footerp1{
+    display: flex;
+    justify-items: flex-end;
+}
+#footerp1 article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    line-height: 0.3;
+    flex-direction: column;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"], textarea[name="message"], input[type="email"] {
+    background-color: black;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px green solid;
+    color: white;
+
+}
+
+#inputsp1, #inputsp2, #inputsp3{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#inputsp1 .input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+#footcont{
+    font-size: 3rem;
+    font-weight: 200 !important;
+}
+#footerinline{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#footerinline a{
+    padding: 2%;
+}
+#footerinline article{
+    display: flex;
+    justify-content: flex-end;
+}

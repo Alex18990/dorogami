@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ама | Dorogami</title>
+        <link href="uma.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="emails.js"></script>
+    </head>
+    <body>
+
+        <nav>
+            <ul id="navbar">
+                <li><img src="Image 9-11-24 at 12.41 PM (1).jpeg" alt="logo image"></li>
+                <li><a href="index.html" target="_blank">Домой</a></li>
+                <li><a  href="aboutUs.html" target="_blank">О Нас</a></li>
+                <li><a href="services.html" target="_blank">Услуги</a></li>
+                <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="intro">
+                <article>
+                    <p>Ама</p>
+                </article>
+            </section>
+
+            <section id="outside">
+                <section id="inside">
+                    <p>Для оптимальной работы нашего тела нужно Агни определенного размера и мощности. Слишком большое Агни способно травмировать или даже 
+                        разрушить ткани тела, а маленькое Агни не способно производить трансформацию и соответственно не справится со своей задачей.</p>
+                    <p>Когда Агни выходит из равновесия, то в теле формируется Ама. Ама -это метаболические отходы, которые сырые, непереваренные и весьма 
+                        токсичные для нашего организма. Самое плохое, что делает Ама- это то, что она закупоривает поры клетке тем самым препятствуея ее 
+                        питанию и выведению отработанных веществ. В таких условиях клетка теряет свою мудрость и способность самостоятельно восстановить себя. 
+                        В дополнение к сказанному, это создает неправильные желания в теле. Например, человек с болезнью печени начинает хотеть съесть жареное 
+                        сало. по своим характеристиками Ама полная противоположность Агни.</p>
+                        
+                    <p>Ама: Холодная, Мокрая, тупая, тяжелая, липкая, с плохим запахом.</p>
+
+                    <p>Агни: сухое, горячее, острое, легкое, проникающее, ароматное.</p>
+                    <p>Значит очень важно знать, есть ли в нашем теле токсины.</p>
+
+                    <p>Признаки Амы:</p>
+                    <p>Боль разлитая по всему телу</p>
+                    <p>Отсутствие аппетита</p>
+                    <p>Вздутие живота</p>
+                    <p>Запор или понос</p>
+                    <p>Слабость и быстрая утомляемость</p>
+                    <p>Зловонный запах пота и кала</p>
+                    <p>Кал липкий и прилипает ко дну унитаза и приходится пользоваться ёршиком, чтобы все смыть. кал здорового человека обычно слегка тонет, но 
+                        не прилипает ко дну унитаза. Налет на языке. В норме допускается небольшой налет, особенно сосредоточенный у корня языка. Но обложенный 
+                        язык с белым или жёлтым покровом является признаком низкого огня.</p>
+                    <p>Плохая, холодная, дождливая погода увеличивает Аму в теле. Если вы метеочувствительный человек, возможно причина этой проблемы- наличие 
+                        Амы в теле. Такая погода по своим характеристикам очень близка Аме. Погода тоже холодная, мокрая, тяжелая, мутная ( небо не ясное, а в 
+                        облаках) - а подобное, как мы знаем усиливает подобное.</p>
+                    
+                    <p>Время Капхи- тоже по характеристикам близка к Аме- это время выпадения росы.</p>
+                    <p>В такое время не рекомендуется делать массаж тела с маслом ( абиянгу). Следует отдавать предпочтение легкой, суховатой и горячей еде. 
+                        Использовать теплые масла.</p>
+                    <p>Справиться с Амой способно только Агни. Поэтому, прежде чем выпить колы со льдом, задумайтесь стоит ли это удовольствие того, 
+                        чтобы ослабить вашу главную защиту тела и ума.</p>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jCCTBPwi3zw" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <br>
+                </section>
+            </section>
+            
+        </main>
+
+        <footer class="contact-section">
+            <section id="footerp1">
+                <article>
+                    <p>Хотите записаться на консультацию?</p>
+                    <p>У Вас возник вопрос?</p>
+                    <p>Хотите стать автором?...</p>
+                </article>
+                
+            </section>
+
+            <section id="begin">
+                <h2>Напишите мне:</h2>
+            </section>
+            <form class="contact-form" onsubmit="sendEmail(event)"> 
+                <div class="form-group">
+                    <section id="inputsp1">
+                        <div class="input-wrapper">
+                            <label for="name">Ваше Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="location">Где Вы живете?</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                    </section>
+                    
+                </div>
+                <section id="inputsp2">
+                    <div class="input-wrapper">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </section>
+                
+                <section id="inputsp3">
+                    <div class="input-wrapper">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea id="message" name="message" cols="50" required></textarea>
+                    </div>
+                </section>
+                
+                <div class="form-submit">
+                    <button type="submit">✈ Отправить</button>
+                </div>
+            </form>
+            <article id="footcont">
+                <p>Контакты:</p>
+            </article>
+            <section id="footerinline">
+                <article>
+                    <p>sdorogami@gmail.com</p>
+                    <a href="https://www.youtube.com/channel/UCbLyyKEnByP3EiHAVB7K6ZA" target="_blank"><img src="youtubelink.JPG" alt="youtube button"></a>
+                    <a href="https://www.facebook.com/Dorogami/" target="_blank"><img src="facebookbutton.JPG" alt="facebook button"></a>
+                    <a href="https://vk.com/id509302293" target="_blank"><img src="vkbutton.JPG" alt="VK button"></a>
+                </article>
+                
+            </section>
+        </footer>
+    </body>
+</html>

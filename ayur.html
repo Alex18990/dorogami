@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Что такоe Аюрведа | Dorogami</title>
+        <link href="ayur.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="emails.js"></script>
+    </head>
+    <body>
+
+        <nav>
+            <ul id="navbar">
+                <li><img src="Image 9-11-24 at 12.41 PM (1).jpeg" alt="logo image"></li>
+                <li><a href="index.html" target="_blank">Домой</a></li>
+                <li><a  href="aboutUs.html" target="_blank">О Нас</a></li>
+                <li><a href="services.html" target="_blank">Услуги</a></li>
+                <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="intro">
+                <article>
+                    <p>Что такое Аюрведа</p>
+                </article>
+            </section>
+
+            <section id="outside">
+                <section id="inside">
+                    <p>Если образно, то Аюрведа- это руководство, как жить нам на этой земле в нашем теле, чтобы достичь здоровья и долголетия. Кода мы покупаем 
+                        любой прибор, то к нему идет инструкция, как этим пользоваться.</p>
+                    <p>Вот Аюрведа по сути и является этой инструкцией, которая объясняет нам как, жить в гармонии с собой, миром вокруг и с Богом в душе.
+                        Конечно это очень простым языком.</p>
+                    <br>
+                    <p>Вообще, в переводе с Санскрита “Аюр”- значит- “жизнь”, а “Веда”- “наука, знания”. Вместе получается “наука о жизни”.</p>
+                    <br>
+                    <p>Она появилась на территории современной Индии по разным источникам от 2500- 5000 тысяч лет назад. Ее считают одной из самых древних знаний по медицине.</p>
+                    <p>Вся Аюрведическая терминология, которой мы пользуемся типа “доши”, “Агни”, “Ама”- написана на Санскрите- языке которым пользовались в 
+                        древней Индии. Главные Аюрведические труды написаны именно на нем. Так что не надо удивляться этим странным слова, а следует к ним 
+                        относится, как например к Латыни, которой пользуются в современной медицине.</p>
+                    <br>
+                    <p>Главное направление Аюрведы- это сохранение и восстановление здоровья. Она очень тщательно описывает человеческую анатомию и даже существуют 
+                        труды по хирургии, которые датируются первым веком нашей эры. Кроме этого Аюрведа описывает множество болезней, способов их лечения и что 
+                        самое главное, что надо делать, чтобы болезни обходили нас стороной.</p>
+                    <br>
+                    <p>Аюрведа, не смотря на свои очень древние корни является весьма структурированной наукой. В ней выделяют 8 основных направлений таких как: 
+                        внутренние заболевания, болезни головы и шеи, хирургия, токсикология, психология и психиатрия, детские болезни, старческие болезни, а также 
+                        наука об афродизиаках и мужской силе.</p>
+                    <br>
+                    <p>Аюрведа учит нас тому, что тело, ум и душа неразрывно связаны и нарушения на любом из этих аспектов сразу же отражается на 2-х других.</p>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t1Pr0YKhI-Q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <br>
+                </section>
+            </section>
+            
+        </main>
+        <footer class="contact-section">
+            <section id="footerp1">
+                <article>
+                    <p>Хотите записаться на консультацию?</p>
+                    <p>У Вас возник вопрос?</p>
+                    <p>Хотите стать автором?...</p>
+                </article>
+                
+            </section>
+
+            <section id="begin">
+                <h2>Напишите мне:</h2>
+            </section>
+            <form class="contact-form" onsubmit="sendEmail(event)"> 
+                <div class="form-group">
+                    <section id="inputsp1">
+                        <div class="input-wrapper">
+                            <label for="name">Ваше Имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="location">Где Вы живете?</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                    </section>
+                    
+                </div>
+                <section id="inputsp2">
+                    <div class="input-wrapper">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </section>
+                
+                <section id="inputsp3">
+                    <div class="input-wrapper">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea id="message" name="message" cols="50" required></textarea>
+                    </div>
+                </section>
+                
+                <div class="form-submit">
+                    <button type="submit">✈ Отправить</button>
+                </div>
+            </form>
+            <article id="footcont">
+                <p>Контакты:</p>
+            </article>
+            <section id="footerinline">
+                <article>
+                    <p>sdorogami@gmail.com</p>
+                    <a href="https://www.youtube.com/channel/UCbLyyKEnByP3EiHAVB7K6ZA" target="_blank"><img src="youtubelink.JPG" alt="youtube button"></a>
+                    <a href="https://www.facebook.com/Dorogami/" target="_blank"><img src="facebookbutton.JPG" alt="facebook button"></a>
+                    <a href="https://vk.com/id509302293" target="_blank"><img src="vkbutton.JPG" alt="VK button"></a>
+                </article>
+                
+            </section>
+        </footer>
+    </body>
+</html>
