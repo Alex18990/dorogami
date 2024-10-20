@@ -65,6 +65,7 @@ nav{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     width: 100vw;
+    
 }
 .headline{
     display: flex;
