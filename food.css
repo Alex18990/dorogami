@@ -1,0 +1,949 @@
+*{
+    font-family: "roboto", sans-serif;
+}
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar a:hover{
+    color: orange;
+}
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("pie.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+main .article2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.15%;
+    font-size: 5rem;
+    line-height: 0.1;
+    padding-right: 35%;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 111, 145);
+    height: 30vh;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+#text article{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#purchase{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(85, 111, 145);
+    font-weight: 300;
+}
+#purchase aside{
+    width: 20%;
+}
+#middle{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+#three{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0.15%;
+    gap: 0;
+}
+
+#three article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.15%;
+
+}
+.white{
+    background-color: white;
+    border-radius: 20px;
+    width: 25vw;
+    color: black;
+    height: 4vh;
+}
+#one{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+#one article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.bar{
+    background-color: rgb(85, 111, 145);
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+.textimage{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 111, 145);
+}
+
+.textout, .imageout{
+    width: 47%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+.textout, .imageout2{
+    padding-right: 3%;
+}
+.imageout, .textin2{
+    padding-left: 3%;
+}
+.textin{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 60%;
+}
+.imagein{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.imagein img, .imagein2 img{
+    width: 50%;
+    height: 90%;
+}
+
+
+.textout2, .imageout2{
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.imagein2{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.textin2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 60%;
+}
+
+
+.doubleimage{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 111, 145);
+}
+.longtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(85, 111, 145);
+    color: white;
+}
+
+.longtext article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+#footerp1{
+    display: flex;
+    justify-items: flex-end;
+}
+#footerp1 article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    line-height: 0.3;
+    flex-direction: column;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"], textarea[name="message"], input[type="email"] {
+    background-color: black;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px green solid;
+    color: white;
+
+}
+
+#inputsp1, #inputsp2, #inputsp3{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#inputsp1 .input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+#footcont{
+    font-size: 3rem;
+    font-weight: 200 !important;
+}
+#footerinline{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#footerinline a{
+    padding: 2%;
+}
+#footerinline article{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1400px){
+    .doubleimage iframe{
+        width: 20vw;
+        height: 18vw;
+    }
+    #page .imagein a{
+        height: 25vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 5rem;
+    }
+    .textimage img{
+        height: 20vh;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    
+}
+
+@media only screen and (max-width: 1250px){
+    
+    #text p{
+        font-size: 1.3rem;
+    }
+    .textimage img{
+        height: 20vh;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .article2 p{
+        line-height: 1;
+        font-size: 4rem;
+    }
+    #text p{
+        font-size: 1.3rem;
+    }
+    #text{
+        padding-top: 3%;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 30vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 1000px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+    #text p{
+        font-size: 1.3rem;
+    }
+    #text{
+        padding-top: 3%;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 35vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+    #text p{
+        font-size: 1.3rem;
+    }
+    #text{
+        height: 50vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    .white{
+        padding-top: 1%;
+        height: 5vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 35vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .textimage p, .longtext p{
+        font-size: 1.35rem;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 35vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 2.75rem;
+        margin-left: 15%;
+    }
+    .article2{
+        width: 100vw !important;
+        padding-bottom: 30%;
+    }
+    main{
+        background-position: center;
+    }
+    #text p{
+        font-size: 1.2rem;
+        width: 75%;
+    }
+    #text{
+        height: 70vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    #purchase p{
+        font-size: 1rem;
+    }
+    .white{
+        height: 4vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 60vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+        flex-direction: column;
+    }
+    .textimage .imageout, .textimage .imageout2, .textimage .textout2, .textimage .textout, .textimage .imagein2, 
+    .textimage .imagein, .textimage .textin, .textimage .textin2{
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100vw !important;
+        height: 25vh;
+    }
+    .textin p, .textin2 p{
+        width: 80%;
+    }
+    .textimage p, .longtext p{
+        font-size: 1.25rem;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+        height: 45vh;
+        flex-direction: column;
+    }
+    .doubleimage .imagein2, .doubleimage .imagein, .doubleimage .imageout, .doubleimage .imageout2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .doubleimage .imageout2{
+        padding-bottom: 3%;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 60vw;
+    }
+
+    /* Fooooter*/
+    /* Fooooter*/
+    /* Fooooter*/
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+    #footerinline a img{
+        width: 8vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #footerinline p{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 2rem;
+        margin-left: 20%;
+    }
+    .article2{
+        width: 100vw !important;
+        padding-bottom: 30%;
+    }
+    main{
+        background-position: center;
+    }
+    #text p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    #text{
+        height: 80vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    #purchase p{
+        font-size: 1rem;
+    }
+    .white{
+        height: 5vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 80vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+        flex-direction: column;
+    }
+    .textimage .imageout, .textimage .imageout2, .textimage .textout2, .textimage .textout, .textimage .imagein2, 
+    .textimage .imagein, .textimage .textin, .textimage .textin2{
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100vw !important;
+        height: 25vh;
+    }
+    .textin p, .textin2 p{
+        width: 80%;
+    }
+    .textimage p, .longtext p{
+        font-size: 1rem;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+        height: 45vh;
+        flex-direction: column;
+    }
+    .doubleimage .imagein2, .doubleimage .imagein, .doubleimage .imageout, .doubleimage .imageout2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .doubleimage .imageout2{
+        padding-bottom: 3%;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 80vw;
+    }
+
+    /* Fooooter*/
+    /* Fooooter*/
+    /* Fooooter*/
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+    #footerinline a img{
+        width: 8vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #footerinline p{
+        font-size: 0.9rem;
+    }
+}
