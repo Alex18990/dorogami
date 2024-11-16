@@ -8,18 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="emails.js"></script>
+        <script src="hamburger.js"></script>
     </head>
     <body>
 
         <nav>
             <ul id="navbar">
-                <li><img src="Image 9-11-24 at 12.41 PM (1).jpeg" alt="logo image"></li>
-                <li><a href="index.html" target="_blank">Домой</a></li>
+                <li ><img id="navlogo" src="logo.JPG" alt="logo image"></li>
+                <li id="test"><a href="index.html" target="_blank">Домой</a></li>
                 <li><a  href="aboutUs.html" target="_blank">О Нас</a></li>
                 <li><a href="services.html" target="_blank">Услуги</a></li>
                 <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
             </ul>
+
+                <div id="hamburger" onclick="toggleMenu()">
+                    <div>___</div>
+                    <div>___</div>
+                    <div>___</div>
+                </div>
         </nav>
+
+        <ul id="menu" class="menu">
+            <li><a href="index.html" target="_blank">Домой</a></li>
+            <li><a href="aboutUs.html" target="_blank">О Нас</a></li>
+            <li><a href="services.html" target="_blank">Услуги</a></li>
+            <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
+        </ul>
 
         <section id="intro">
             <p>Все о детоксах</p>
@@ -195,7 +209,7 @@
             <aside class="imageout2" id="page">
 
                 <aside class="imagein" >
-                    <a href="detoxq.html" target="_blank"><img src="planttext.JPG"></a>
+                    <a href="detoxq.html" target="_blank"><img src="planttext.JPG" alt="image of plants on a white background"></a>
                 </aside>
             </aside>
         </section>
