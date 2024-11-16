@@ -22,7 +22,31 @@ nav{
 #navbar a:hover{
     color: orange;
 }
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -258,4 +282,713 @@ input[type="text"], textarea[name="message"], input[type="email"] {
 #footerinline article{
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1400px){
+    .doubleimage iframe{
+        width: 20vw;
+        height: 18vw;
+    }
+    #page .imagein a{
+        height: 25vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .article2 p{
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 5rem;
+    }
+    .textimage img{
+        height: 20vh;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    
+}
+
+@media only screen and (max-width: 1250px){
+    
+    #text p{
+        font-size: 1.3rem;
+    }
+    .textimage img{
+        height: 20vh;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .article2 p{
+        line-height: 1;
+        font-size: 4rem;
+    }
+    #text p{
+        font-size: 1.3rem;
+    }
+    #text{
+        padding-top: 3%;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 30vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 1000px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #article2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #article2 p{
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 4rem;
+        margin-right: 40%;
+    }
+    #text p{
+        font-size: 1.2rem !important;
+    }
+    #text{
+        padding-top: 3%;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 35vw;
+    }
+    .textimage p{
+        font-size: 1.2rem;
+        font-weight: 200 !important;
+    }
+    .textimage a{
+        font-size: 1.2rem;
+        width: 25vw;
+        text-decoration: underline;
+        margin: 0 !important;
+    }
+    .textimage{
+        padding-bottom: 1%;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #article2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #article2 p{
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 4rem;
+        margin-right: 40%;
+    }
+    #text p{
+        font-size: 1rem;
+    }
+    #text{
+        height: 60vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    .white{
+        padding-top: 1%;
+        height: 5vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 23vh;
+        width: 40vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+        height: 60vh;
+    }
+    .textimage p{
+        font-size: 1.1rem;
+        font-weight: 200 !important;
+    }
+    #five{
+        height: 70vh;
+    }
+    #table{
+        height: 50vh;
+    }
+    .textimage a{
+        font-size: 1rem;
+        width: 25vw;
+        text-decoration: underline;
+        margin: 0 !important;
+    }
+    .textimage .imageout{
+        align-items: center;
+    }
+    .textimage .imagein2{
+        align-items: center;
+    }
+    .textout, .textout2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .doubleimage{
+        padding-bottom: 2%;
+    }
+    .doubleimage .imagein2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .doubleimage .imagein{
+        display: flex;
+        align-items: flex-end;
+    }
+    .doubleimage img{
+        height: 22vh;
+        width: 35vw;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #article2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #article2 article{
+        margin-bottom: 60%;
+    }
+    #article2 p{
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 3rem;
+        margin-left: 1%;
+        
+    }
+    main{
+        background-position: center;
+    }
+    #text p{
+        font-size: 1.1rem !important;
+    }
+    #text{
+        height: 70vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    #purchase p{
+        font-size: 1rem;
+    }
+    .white{
+        height: 4vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 20vh;
+        width: 60vw;
+    }
+    .textimage{
+        padding-bottom: 1%;
+        flex-direction: column;
+    }
+    .textimage .imageout, .textimage .imageout2, .textimage .textout2, .textimage .textout, .textimage .imagein2, 
+    .textimage .imagein, .textimage .textin, .textimage .textin2{
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100vw !important;
+        height: 25vh;
+    }
+    .textin p, .textin2 p{
+        width: 80%;
+    }
+    .textimage p{
+        font-size: 1.1rem;
+    }
+    #five .imageout{
+        margin-top: 8%;
+    }
+    #five .textin{
+        margin-bottom: 5%;
+    }
+    /* Fooooter*/
+    /* Fooooter*/
+    /* Fooooter*/
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+    #footerinline a img{
+        width: 8vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #footerinline p{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #article2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    #article2 article{
+        margin-bottom: 100%;
+    }
+    #article2 p{
+        line-height: 1.5;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 2.5rem;
+        margin-left: 15%;
+        
+    }
+    main{
+        background-position: center;
+    }
+    #text p{
+        font-size: 0.9rem !important;
+    }
+    #text{
+        height: 80vh;
+    }
+    #purchase{
+        height: 45vh;
+    }
+    #purchase p{
+        font-size: 1rem;
+    }
+    .white{
+        height: 5vh;
+        width: 30vw;
+    }
+    #transition{
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+    .textimage img{
+        height: 15vh;
+        width: 70vw;
+    }
+    .textimage{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .textimage .imageout, .textimage .imageout2, .textimage .textout2, .textimage .textout, .textimage .imagein2, 
+    .textimage .imagein, .textimage .textin, .textimage .textin2{
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100vw !important;
+        height: 25vh;
+    }
+    .textin p, .textin2 p{
+        width: 80%;
+    }
+    .textimage p{
+        font-size: 1rem;
+    }
+    #five .imageout{
+        margin-top: 25%;
+    }
+    #five .textin{
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+    #vatas, #green, #eagle, #pitta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 65vh;
+    }
+    #eagle{
+        height: 58vh;
+    }
+    #green{
+        height: 60vh;
+    }
+    #vatas .textout2{
+        margin-top: 20%;
+    }
+    #vatas .textin2{
+        margin-bottom: 15%;
+    }
+    #pitta .textout{
+        margin-top: 20%;
+    }
+    #pitta .imageout{
+        margin-top: 10%;
+    }
+    #time, #purple, #table, #vatapitta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65vh;
+    }
+    #vatapitta .imageout{
+        margin-top: 10%;
+    }
+    #purple .textout2{
+        margin-top: 10%;
+    }
+    #purple .textin2{
+        margin-bottom: 5%;
+    }
+    #time .textout{
+        margin-top: 1%;
+    }
+    #time .textin{
+        margin-bottom: 10%;
+    }
+    #time .imageout{
+        margin-top: 10%;
+    }
+    
+    /* Fooooter*/
+    /* Fooooter*/
+    /* Fooooter*/
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+    #footerinline a img{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #footerinline p{
+        font-size: 0.9rem;
+    }
 }
