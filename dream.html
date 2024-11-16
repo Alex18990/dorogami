@@ -8,18 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="emails.js"></script>
+        <script src="hamburger.js"></script>
     </head>
     <body>
 
         <nav>
             <ul id="navbar">
-                <li><img src="Image 9-11-24 at 12.41 PM (1).jpeg" alt="logo image"></li>
-                <li><a href="index.html" target="_blank">Домой</a></li>
+                <li><img id="navlogo" src="logo.JPG" alt="logo image"></li>
+                <li id="test"><a href="index2.html" target="_blank">Домой</a></li>
                 <li><a  href="aboutUs.html" target="_blank">О Нас</a></li>
                 <li><a href="services.html" target="_blank">Услуги</a></li>
                 <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
             </ul>
+
+                <div id="hamburger" onclick="toggleMenu()">
+                    <div>___</div>
+                    <div>___</div>
+                    <div>___</div>
+                </div>
         </nav>
+
+        <ul id="menu" class="menu">
+            <li><a href="index2.html" target="_blank">Домой</a></li>
+            <li><a href="aboutUs.html" target="_blank">О Нас</a></li>
+            <li><a href="services.html" target="_blank">Услуги</a></li>
+            <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
+        </ul>
         <section id="intro">
             <p>СОН</p>
         </section>
@@ -44,9 +58,10 @@
 
         <section id="video">
             <aside>
-                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/JoE9xX_2iZM" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/JoE9xX_2iZM" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                
             </aside>
             <article>
                 <p>В этом видео я подробно расскажу для</p>
@@ -88,11 +103,12 @@
             </section>
 
             <section id="video2">
-                <aside>
-                    <iframe width="100%" height="50%" src="https://www.youtube.com/embed/3kMsGI8PtGE" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+                <aside id="smallside">
+                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/3kMsGI8PtGE" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    
                 </aside>
                 <article>
                     <p>Первое видео курса Вы можете свободно</p>
