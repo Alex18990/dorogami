@@ -23,6 +23,31 @@ nav{
 #navbar a:hover{
     color: orange;
 }
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
 main{
     padding-top: 2.5%;
     background-color: hsl(223, 59%, 31%);
@@ -77,20 +102,21 @@ main{
     background-image: url("baloons.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic1in p{
+    margin-bottom: 30%;
+    margin-right: 30%;
+    color: rgb(36, 60, 94);
+}
 #c1in{
     line-height: 0.5;
-    /*background-color: hsl(223, 44%, 48%);*/
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem; 
 }
 
 
@@ -118,12 +144,10 @@ main{
     background-image: url("leaves.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
 }
 
 #textc2{
-    line-height: 0.5;
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
@@ -139,10 +163,19 @@ main{
     justify-content: center;
     align-items: center;
 }
+#textin p{
+    max-width: 50%;
+    text-indent: 8%;
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
 a{
     padding-top: 1.5%;
     color: yellow;
     text-decoration: none;
+}
+#textin a{
+    font-size: 1.5rem;
 }
 
 
@@ -171,19 +204,32 @@ a{
     width: 100%;
     background-image: url("pie.jpeg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
     
 }
-
+#ic3in p{
+    max-width: 60%;
+    line-height: 1.7;
+    margin-bottom: 14%;
+    margin-left: 2%;
+}
 #c3in{
-    line-height: 0.5;
+    
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 1.5rem;
+}
+#c3in p{
+    max-width: 50%;
+    text-indent: 5%;
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+#c3in a{
     font-size: 1.5rem;
 }
 
@@ -200,23 +246,26 @@ a{
     justify-content: center;
 }
 #ic4in{
-    font-size: 3rem;
-    color: black;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url("massage.jpg");
+    background-image: url("massbackround.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: left bottom;
     width: 100%;
 }
-
+#ic4in h2{
+    font-size: 4rem;
+    color: white;
+    margin-top: 26%;
+    margin-right: 53%;
+    font-weight: 400 !important;
+}
 
 #c4in{
-    line-height: 0;
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
@@ -225,7 +274,15 @@ a{
     width: 100%;
     font-size: 1.3rem;
 }
-
+#c4in p{
+    line-height: 1.7;
+    max-width: 60%;
+    text-indent: 8%;
+    font-size: 1.7rem;
+}
+#c4in a{
+    font-size: 1.5rem;
+}
 
 
 
@@ -239,7 +296,7 @@ a{
 }
 #ic5in{
     
-    font-size: 3rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,9 +305,13 @@ a{
     background-image: url("detox.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic5in h2{
+    font-size: 4rem;
+    max-width: 60%;
+    margin-left: 10%;
+    font-weight: 450 !important;
+}
 #c5in{
     line-height: 0.5;
     background-color: hsl(208, 28%, 24%);
@@ -260,6 +321,12 @@ a{
     align-items: center;
     width: 100%;
     font-size: 1.5rem;
+}
+#c5in p{
+    font-size: 1.7rem;
+    text-indent: 8%;
+    line-height: 1.7;
+    max-width: 60%;
 }
 
 
@@ -283,12 +350,14 @@ a{
     background-image: url("smell2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic6in h2{
+    font-size: 3rem;
+    margin-bottom: 30%;
+    max-width: 60%;
+}
 #c6in{
     line-height: 0.5;
-    /*background-color: hsl(223, 44%, 48%);*/
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
@@ -297,7 +366,15 @@ a{
     width: 100%;
     font-size: 1.3rem;
 }
-
+#c6in p{
+    font-size: 1.7rem;
+    text-indent: 8%;
+    line-height: 1.7;
+    max-width: 60%;
+}
+#c6in a{
+    font-size: 1.5rem;
+}
 
 
 
@@ -313,7 +390,7 @@ a{
 }
 #ic7in{
     
-    font-size: 3rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,10 +399,15 @@ a{
     background-image: url("color.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic7in h2{
+    font-size: 3rem;
+    max-width: 60%;
+    margin-bottom: 30%;
+    color: black;
+}
 #c7in{
+    font-size: 1.5rem;
     line-height: 0.5;
     background-color: hsl(208, 28%, 24%);
     display: flex;
@@ -334,6 +416,15 @@ a{
     align-items: center;
     width: 100%;
     font-size: 1.1rem;
+}
+#c7in p{
+    text-indent: 8%;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 60%;
+}
+#c7in a{
+    font-size: 1.5rem;
 }
 
 
@@ -347,8 +438,6 @@ a{
     justify-content: center;
 }
 #ic8in{
-    
-    font-size: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,11 +446,15 @@ a{
     background-image: url("dream.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic8in h2{
+    font-size: 3rem;
+    max-width: 70%;
+    margin-bottom: 30%;
+    color: hsl(208, 28%, 24%);
+    font-weight: 450 !important;
+}
 #c8in{
-    line-height: 0.3;
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
@@ -369,6 +462,15 @@ a{
     align-items: center;
     width: 100%;
     font-size: 1rem;
+}
+#c8in p{
+    text-indent: 8%;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 60%;
+}
+#c8in a{
+    font-size: 1.5rem;
 }
 
 
@@ -392,12 +494,12 @@ a{
     background-image: url("cofee.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+#ic9in h2{
+    margin-bottom: 35%;
+}
 #c9in{
     line-height: 0.5;
-    /*background-color: hsl(223, 44%, 48%);*/
     background-color: hsl(208, 28%, 24%);
     display: flex;
     flex-direction: column;
@@ -405,6 +507,12 @@ a{
     align-items: center;
     width: 100%;
     font-size: 1.5rem;
+}
+#c9in p{
+    font-size: 1.7rem;
+    text-indent: 8%;
+    line-height: 1.7;
+    max-width: 60%;
 }
 
 .gap{
@@ -481,4 +589,405 @@ input[type="text"], textarea[name="message"], input[type="email"] {
 #footerinline article{
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1400px){
+    #ic1in p{
+        margin-bottom: 42%;
+    }
+    #imagein p{
+        margin-top: 10%;
+    }
+    #ic4in h2{
+        margin-top: 43%;
+    }
+    #ic6in h2{
+        margin-bottom: 40%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    #ic1in p{
+        margin-bottom: 60% !important;
+        margin-right: 0;
+    }
+    #imagein p{
+        margin-top: 15%;
+        font-size: 2.4rem;
+    }
+    #ic4in h2{margin-left: 7%;
+        margin-top: 45%;
+    }
+    #c4in p{
+        font-size: 1.5rem;
+    }
+    #c5in p{
+        font-size: 1.5rem;
+    }
+    #ic6in h2{
+        margin-bottom: 40%;
+    }
+    #c6in p{
+        font-size: 1.6rem;
+    }
+    #c8in p{
+        font-size: 1.4rem;
+    }
+    #ic9in h2{
+        margin-bottom: 60%;
+        margin-left: 23%;
+    }
+    
+}
+@media only screen and (min-width: 550px) and (max-width: 999px){
+    *{
+        box-sizing: border-box;
+    }
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #words p{
+        margin-left: 10%;
+    }
+    .course{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    #textc1, #textc2, #textc3, #textc4, #textc5, #textc6, #textc7, #textc8, #textc9{
+        width: 100%;
+    }
+    #imagec1, #imagein, #imagec3, #imagec4, #imagec5, #imagec6, #imagec7, #imagec8, #imagec9{
+        width: 100%;
+    }
+    #ic1in p{
+        margin-right: 0;
+        margin-bottom: 60%;
+    }
+    #imagein p{
+        margin-top: 15%;
+        font-size: 2.4rem;
+    }
+    #ic4in h2{
+        margin-left: 7%;
+        margin-top: 25%;
+    }
+    #c4in p{
+        font-size: 1.5rem;
+    }
+    #ic5in h2{
+        font-size: 3rem;
+    }
+    #c5in p{
+        font-size: 1.5rem;
+    }
+    #ic6in h2{
+        margin-bottom: 40%;
+    }
+    #c6in p{
+        font-size: 1.6rem;
+    }
+    #c8in p{
+        font-size: 1.4rem;
+    }
+    #ic9in h2{
+        margin-bottom: 37%;
+    }
+
+    #footerp1 p{
+        line-height: 1;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+
+    
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+
+    
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #footerinline a img{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerinline p{
+        font-size: 1.5rem;
+    }
+    
+}
+@media only screen and (max-width: 550px){
+    *{
+        box-sizing: border-box;
+    }
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; /* smaller width */
+        height: 18px; /* smaller height */
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; /* thinner bars */
+    }
+    .in p{
+        margin-top: 50%;
+        font-size: 3rem;
+    }
+    #words p{
+        margin-left: 10%;
+        font-size: 1rem;
+    }
+    .course {
+        display: flex;
+        flex-direction: column-reverse !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .course #imagein p{
+        padding-left: 5%;
+    }
+    #textc1, #textc2, #textc3, #textc4, #textc5, #textc6, #textc7, #textc8, #textc9,
+    #imagec1, #imagein, #imagec3, #imagec4, #imagec5, #imagec6, #imagec7, #imagec8, #imagec9 {
+        width: 100%;
+    }
+    #ic1in p{
+        margin-right: 5%;
+        margin-bottom: 80%;
+        font-size: 2.5rem;
+    }
+    #c1in p{
+        font-size: 1rem;
+    }
+    #textin p{
+        font-size: 1.1rem;
+    }
+    #imagein p{
+        margin-top: 22%;
+        font-size: 2.4rem;
+    }
+    #ic3in{
+        background-position: center;
+    }
+    #ic3in p{
+        font-size: 2rem;
+        font-weight: 400 !important;
+        margin-bottom: 30%;
+    }
+    #c3in p{
+        font-size: 1rem;
+    }
+    #ic4in h2{
+        margin-top: 60%;
+        margin-left: 40%;
+    }
+    #c4in p{
+        font-size: 1.1rem;
+    }
+    #ic5in h2{
+        font-size: 2.5rem;
+    }
+    #c5in p{
+        font-size: 1.1rem;
+    }
+    #ic6in h2{
+        margin-bottom: 40%;
+    }
+    #c6in p{
+        font-size: 1.1rem;
+    }
+    #c7in p{
+        font-size: 1.1rem;
+    }
+    #ic8in h2{
+        margin-bottom: 60%;
+        margin-right: 10%;
+    }
+    #c8in p{
+        font-size: 1rem;
+    }
+    #ic9in{
+        background-position: center;
+    }
+    #ic9in h2{
+        margin-bottom: 80%;
+    }
+    #c9in p{
+        font-size: 1rem;
+    }
+    a{
+        text-decoration: underline;
+        font-size: 1.2rem !important;
+    }
+    #footerp1 p{
+        line-height: 1;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+
+    
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+
+    
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #footerinline a img{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerinline p{
+        font-size: 0.9rem;
+    }
 }
