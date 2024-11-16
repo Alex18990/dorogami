@@ -8,19 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="emails.js"></script>
+        <script src="hamburger.js"></script>
     </head>
     <body>
 
         <nav>
             <ul id="navbar">
-                <li><img src="logo.JPG" alt="logo image"></li>
-                <li><a href="index.html" target="_blank">Домой</a></li>
+                <li ><img id="navlogo" src="logo.JPG" alt="logo image"></li>
+                <li id="test"><a href="index.html" target="_blank">Домой</a></li>
                 <li><a  href="aboutUs.html" target="_blank">О Нас</a></li>
                 <li><a href="services.html" target="_blank">Услуги</a></li>
                 <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
             </ul>
+
+                <div id="hamburger" onclick="toggleMenu()">
+                    <div>___</div>
+                    <div>___</div>
+                    <div>___</div>
+                </div>
         </nav>
 
+        <ul id="menu" class="menu">
+            <li><a href="index.html" target="_blank">Домой</a></li>
+            <li><a href="aboutUs.html" target="_blank">О Нас</a></li>
+            <li><a href="services.html" target="_blank">Услуги</a></li>
+            <li><a href="school.html" target="_blank">Школа Аюрведы</a></li>
+        </ul>
         <section id="first">
             <article id="out">
                 <article id="in1">
@@ -53,63 +66,76 @@
 
 
         <section id="main1">
-            <article class="text">
-                <section>
-                    <p><strong>Аюрведа</strong>- это древнейшая система знаний по медицине, которая помогает не только решать многие проблемы со здоровьем, но и предотвращать 
-                        их возникновение, а также учит правилам жизни, приводящимк долголетию.</p>
-                    <a class="redlink" href="ocnovi.html" target="_blank">Читать далее</a>
-                </section>
-            </article>
-
-            <aside class="img">
-                <img src="hands.jpeg">
-            </aside>
-
-
-            <article class="text">
-                <section>
-                    <p><strong>Давайте знакомится</strong>! Я -Мила Карпенко, психолог и Аюрведа- практик. Dorogami- это мой личный проект в котором я делюсь знаниями 
-                        полученными мной при изучении Аюрведы и психологии.</p>
-                        <a class="redlink" href="consult.html" target="_blank">Читать далее</a>
-                </section>
-            </article>
-
-
-            <aside class="img">
-                <img src="author.jpeg">
-            </aside>
+            <section id="media1">
+                <article class="text">
+                    <section>
+                        <p><strong>Аюрведа</strong>- это древнейшая система знаний по медицине, которая помогает не только решать многие проблемы со здоровьем, но и предотвращать 
+                            их возникновение, а также учит правилам жизни, приводящимк долголетию.</p>
+                        <a class="redlink" href="ocnovi.html" target="_blank">Читать далее</a>
+                    </section>
+                </article>
+    
+                <aside class="img">
+                    <img src="hands.jpeg">
+                </aside>
+            </section>
+            
+            <aside class="hbar"></aside>
+            
+            <section id="media2">
+                <article class="text">
+                    <section>
+                        <p><strong>Давайте знакомится</strong>! Я -Мила Карпенко, психолог и Аюрведа- практик. Dorogami- это мой личный проект в котором я делюсь знаниями 
+                            полученными мной при изучении Аюрведы и психологии.</p>
+                            <a class="redlink" href="consult.html" target="_blank">Читать далее</a>
+                    </section>
+                </article>
+    
+    
+                <aside class="img">
+                    <img src="author.jpeg">
+                </aside>
+            </section>
+            
         </section>
 
         <section class="bar"></section>
 
         <section id="main2">
 
-            <aside class="img2">
-                <img src="Image.jpeg">
-            </aside>
+            <section id="media3">
+                <aside class="img2">
+                    <img src="Image.jpeg">
+                </aside>
+    
+                <article class="text2">
+                    <section>
+                        <h2>Личные Консульации</h2>
+                        <p>Аюрведа- это конечно узнавание себя и индивидуальных особенностей работы своего тела, ума, эмоций... Хотите узнать о себе 
+                        больше? Приходите, будем разбираться вместе.</p>
+                        <a class="redlink2" href="consult.html" target="_blank">Читать далее</a>
+                    </section>
+                    
+                </article>
+            </section>
 
-            <article class="text2">
-                <section>
-                    <h2>Личные Консульации</h2>
-                    <p>Аюрведа- это конечно узнавание себя и индивидуальных особенностей работы своего тела, ума, эмоций... Хотите узнать о себе 
-                    больше? Приходите, будем разбираться вместе.</p>
-                    <a class="redlink2" href="consult.html" target="_blank">Читать далее</a>
-                </section>
-                
-            </article>
+            <aside class="hbar"></aside>
 
-            <aside class="img2" id="youtube">
-                <img src="yt2.JPG" alt="youtube logo">
-            </aside>
-
-            <article class="text2">
-                <section>
-                    <h2>Лекции на YouTube</h2>
-                    <p>Наш YouTube канал наполнен лекциями об Аюрведе и практическими рекомендациями, как справиться с различными проблемами.</p>
-                    <a class="redlink2" href="https://www.youtube.com/@dorogami1852" target="_blank">Youtube</a>
-                </section>
-                
-            </article>
+            <section id="media4">
+                <aside class="img2" id="youtube">
+                    <img src="yt2.JPG" alt="yputube logo">
+                </aside>
+    
+                <article class="text2">
+                    <section>
+                        <h2>Лекции на YouTube</h2>
+                        <p>Наш YouTube канал наполнен лекциями об Аюрведе и практическими рекомендациями, как справиться с различными проблемами.</p>
+                        <a class="redlink2" href="https://www.youtube.com/@dorogami1852" target="_blank">Youtube</a>
+                    </section>
+                    
+                </article>
+            </section>
+            
         </section>
 
         <footer class="contact-section">
