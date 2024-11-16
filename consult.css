@@ -22,7 +22,31 @@ nav{
 #navbar a:hover{
     color: orange;
 }
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
 #main{
     background-image: url("sun1.jpeg");
     background-repeat: no-repeat;
@@ -142,4 +166,157 @@ input[type="text"], textarea[name="message"], input[type="email"] {
 #footerinline article{
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1200px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main p{
+        font-size: 5.5rem;
+    }
+    #textsection p, #textsection h2{
+        max-width: 90%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #main{
+        background-position: center;
+    }
+    #main p{
+        font-size: 4rem;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #main{
+        background-position: center;
+    }
+    #main p{
+        font-size: 3rem;
+    }
+    #textsection p, #textsection h2{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #main{
+        background-position: center;
+    }
+    #main p{
+        font-size: 1.8rem;
+    }
+    #textsection p, #textsection h2{
+        font-size: 1.2rem;
+    }
 }
