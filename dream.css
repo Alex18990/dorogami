@@ -1,0 +1,1079 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar a:hover{
+    color: orange;
+}
+
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
+#intro{
+    font-size: 12rem;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url("dream.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+#intro p{
+    padding-right: 30%;
+}
+#sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.4;
+    color: white;
+    background-color: rgb(48, 75, 133);
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 75, 133);
+    color: yellow;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background-color: rgb(48, 75, 133);
+}
+#video aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 48%;
+    padding-right: 2%;
+}
+#video aside iframe {
+    top: 0;
+    left: 0;
+    width: 53vh; 
+    height: 60%; 
+    border: 0; 
+}
+#video article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 0.5;
+}
+
+#purchase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(48, 75, 133);
+    color: white;
+    font-size: 1.5rem;
+}
+
+#together{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 75, 133);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 48%; 
+    padding-right: 2%;  
+}
+#together aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 47%;
+    padding-left: 3%;
+}
+#together aside a{
+    background-color: yellow;
+    color: black;
+    padding: 1%;
+}
+.last{
+    text-decoration: none;
+}
+#big{
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    background-color: rgb(48, 75, 133);
+    color: white;
+    font-weight: 250;
+    height: 25vh;
+}
+
+
+
+#video2{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background-color: rgb(48, 75, 133);
+}
+#video2 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 48%;
+    padding-right: 2%;
+}
+#video2 aside iframe {
+    top: 0;
+    left: 0;
+    width: 53vh; 
+    height: 60%; 
+    border: 0; 
+}
+#video2 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 0.5;
+}
+
+.textimage{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 75, 133);
+}
+
+.textout, .imageout{
+    width: 47%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+.textout, .imageout2{
+    padding-right: 3%;
+}
+.imageout, .textin2{
+    padding-left: 3%;
+}
+.textin{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+}
+.imagein{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.imagein img, .imagein2 img{
+    width: 55%;
+    height: 85%;
+}
+
+
+.textout2, .imageout2{
+    width: 48%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.imagein2{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.textin2{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+}
+
+.doubleimage{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 75, 133);
+}
+.longtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(48, 75, 133);
+    color: white;
+}
+
+.longtext article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+#footerp1{
+    display: flex;
+    justify-items: flex-end;
+}
+#footerp1 article{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    line-height: 0.3;
+    flex-direction: column;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"], textarea[name="message"], input[type="email"] {
+    background-color: black;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px green solid;
+    color: white;
+
+}
+
+#inputsp1, #inputsp2, #inputsp3{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#inputsp1 .input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+#footcont{
+    font-size: 3rem;
+    font-weight: 200 !important;
+}
+#footerinline{
+    font-size: 1.5rem;
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#footerinline a{
+    padding: 2%;
+}
+#footerinline article{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1400px){
+    .doubleimage iframe{
+        width: 20vw;
+        height: 18vw;
+    }
+    #page .imagein a{
+        height: 25vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    #images{
+        width: 100vw;
+    }
+    #threeimage iframe{
+        width: 27vw;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .doubleimage iframe{
+        width: 20vw;
+        height: 18vw;
+    }
+    #page .imagein a{
+        height: 22vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .imagein2 img{
+        margin-top: 10%;
+        max-width: 25vw;
+        max-height: 30vh;
+    }
+    #images{
+        width: 100vw;
+    }
+    #threeimage iframe{
+        width: 27vw;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .doubleimage iframe{
+        width: 25vw;
+        height: 18vw;
+    }
+    #page .imagein a{
+        width: 30vw;
+        height: 22vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .imagein2 img{
+        margin-top: 10%;
+        max-width: 25vw;
+        max-height: 30vh;
+    }
+    #images{
+        width: 100vw;
+    }
+    #threeimage iframe{
+        width: 27vw;
+    }
+}
+@media only screen and (max-width: 1000px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    iframe{
+        width: 80% !important;
+    }
+    .textimage .imagein img{
+        height: 33vh;
+        width: 33vw;
+        margin-top: 20% !important;
+    }
+    .textimage .imageout2 .imagein2 img{
+        height: 33vh;
+        width: 40vw !important;
+    }
+    #intro{
+        background-position: center;
+    }
+    .doubleimage{
+        flex-direction: column;
+    }
+    .doubleimage aside{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+    .doubleimage .imagein2{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein2 img{
+        max-width: none;
+        width: 40vw !important;
+        height: 20vh;
+    }
+    .doubleimage .imagein{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein img{
+        max-width: none;
+        width: 40vw !important;
+        height: 20vh;
+    }
+    
+}
+
+@media only screen and (max-width: 850px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #intro{
+        background-position: center;
+    }
+    #intro p{
+        font-size: 6rem !important;
+    }
+    #sec1 p{
+        width: 70%;
+        line-height: 1;
+        margin-bottom: 0;
+        text-indent: 2%;
+    }
+    #video iframe, #video2 iframe{
+        max-width: 45vw !important;
+        height: 30vh;
+    }
+    #video p, #video2 p{
+        line-height: 1.3;
+        margin: 0;
+    }
+    #purchase p, #together p, #together a{
+        margin-left: 3%;
+    }
+    
+    .textimage{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textimage .imagein2 img{
+        height: 20vh;
+        max-width: none !important;
+        width: 100% !important;
+    }
+    .textimage .imagein img{
+        height: 20vh;
+        max-width: none !important;
+        width: 100% !important;
+    }
+    .textout, .textout2, .textin, .textin2{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .textimage p{
+        width: 70%;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .bar{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .doubleimage{
+        flex-direction: column;
+    }
+    .doubleimage aside{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+    .doubleimage .imagein2{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein2 img{
+        max-width: none;
+        width: 40vw !important;
+        height: 20vh;
+    }
+    .doubleimage .imagein{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein img{
+        max-width: none;
+        width: 40vw !important;
+        height: 20vh;
+    }
+}
+@media only screen and (max-width: 600px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #intro{
+        font-size: 4.5rem !important;
+    }
+    #sec1 p{
+        width: 70%;
+        line-height: 1;
+        margin-bottom: 0;
+        text-indent: 2%;
+    }
+    #video, #video2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+    #video aside, #video2 aside{
+        width: 100vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #video iframe, #video2 iframe{
+        width: 100vw !important;
+        height: 100%;
+    }
+    #video p, #video2 p{
+        line-height: 1.3;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    #purchase p, #together p, #together a{
+        margin-left: 10%;
+        font-size: 1.2rem;
+    }
+    
+    .textimage{
+        display: flex;
+        flex-direction: column;
+    }
+    .textimage .imagein img{
+        height: 20vh;
+        max-width: none !important;
+        width: 100% !important;
+        overflow-x: hidden;
+    }
+    .textout, .textout2, .textin, .textin2{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .textimage p{
+        width: 70%;
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    .textimage .imageout2 {
+        width: 100% !important; 
+        max-width: none;  
+    } 
+
+    .textimage .imagein2 {
+        width: 100vw !important; 
+        display: flex !important; 
+        justify-content: center !important; 
+        align-items: center !important; 
+    }
+
+    .textimage .imagein2 img {
+        width: 100% !important; /* Adjust this percentage as needed */
+        max-width: 100%; /* Ensure the image does not exceed the container's width */
+        height: auto; /* Maintain the aspect ratio */
+    }
+    .textimage .imageout2 .imagein2 img{
+        height: 20vh;
+        max-width: none !important;
+        width: 70% !important;
+        margin-left: 15%;
+        overflow-x: hidden;
+    }
+    .bar{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .doubleimage{
+        flex-direction: column;
+    }
+    .doubleimage aside{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+    .doubleimage .imagein2{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein2 img{
+        max-width: none;
+        width: 50vw !important;
+        height: 20vh;
+    }
+    .doubleimage .imagein{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein img{
+        max-width: none;
+        width: 50vw !important;
+        height: 20vh;
+    }
+    .longtext p{
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+
+    
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+
+    
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+
+    
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #footerinline a img{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerinline p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    html, body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+    #intro{
+        font-size: 4.5rem !important;
+    }
+    #sec1 p{
+        width: 70%;
+        line-height: 1;
+        margin-bottom: 0;
+        text-indent: 2%;
+    }
+    #video, #video2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw; /* Ensure the video section takes full width */
+        padding: 0; /* Remove any padding that might restrict size */
+    }
+    #video aside, #video2 aside {
+        width: 100vw; /* Force the aside container to use the full width */
+        max-height: none !important;
+        height: 40vh !important;
+    }
+    #video p, #video2 p{
+        line-height: 1.3;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    #video iframe, #video2 iframe {
+        width: 100% !important; 
+        height: 20vh !important;
+        box-sizing: border-box;
+        max-width: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Creates a shadow around the iframe */
+        border-radius: 5px; /* Optional: rounds the corners slightly */
+    }
+    #purchase p, #together p{
+        margin-left: 10%;
+        font-size: 1.2rem;
+    }
+    #together{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #together a{
+        text-decoration: underline;
+        padding-left: 20% !important;
+        font-size: 1.2rem;
+    }
+    #big{
+        font-size: 5rem;
+    }
+    .textimage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textimage .imagein2 img {
+        width: 80%; /* Adjust this value as needed */
+        height: 20%; /* Maintain aspect ratio */
+    }
+    .imageout2, .imageout{
+        width: 100vw;
+    }
+    .textimage{
+        padding-top: 15%;
+    }
+    .textimage .imagein2 img{
+        height: 20vh;
+        max-width: none !important;
+        width: 70% !important;
+        margin-right: 15%;
+        overflow-x: hidden;
+    }
+    .textimage .imagein img{
+        height: 20vh;
+        max-width: none !important;
+        width: 70% !important;
+        margin-left: 15%;
+        overflow-x: hidden;
+    }
+    .textout, .textout2, .textin, .textin2{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .textimage p{
+        width: 70%;
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    .bar{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .doubleimage{
+        flex-direction: column;
+    }
+    .doubleimage aside{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+    .doubleimage .imagein2{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein2 img{
+        max-width: none;
+        width: 60vw !important;
+        height: 20vh;
+    }
+    .doubleimage .imagein{
+        display: block;
+        max-width: none;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .doubleimage .imagein img{
+        max-width: none;
+        width: 60vw !important;
+        height: 20vh;
+    }
+    .longtext p{
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+
+    
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+
+    
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+
+    
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #footerinline a img{
+        width: 9vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerinline p{
+        font-size: 0.9rem;
+    }
+}
