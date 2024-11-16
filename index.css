@@ -7,6 +7,7 @@ nav{
     background-color: white;
     position: relative;
     z-index: 2;
+    
 }
 #navbar{
     display: flex;
@@ -21,6 +22,31 @@ nav{
 
 #navbar a:hover{
     color: orange;
+}
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
 }
 
 #first{
@@ -100,21 +126,23 @@ nav{
     padding: 0;
 }
 
-#main1{
+#main1, #media1, #media2{
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 50vh;
+    background-color: black;
 }
 
-.text .img{
-    max-width: 25%;
+.text, .img{
+    max-width: 25vw;
     width: fit-content;
     height: 50vh;
 }
 .text{
     display: flex;
     justify-content: center;
+    max-width: 25vw;
 }
 .text section{
     display: flex;
@@ -136,9 +164,9 @@ nav{
     justify-content: center;
 }
 .redlink{
-    margin-top: 10%;
     color: yellow;
     text-decoration: none;
+    margin-top: 10%;
 }
 
 .bar{
@@ -152,16 +180,14 @@ nav{
 
 
 
-
-
-#main2{
+#main2, #media3, #media4{
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 .text2, .img2{
     flex: 2;
-    max-width: 25% !important;
+    max-width: 25vw !important;
     width: fit-content !important;
     height: 50vh;
     font-size: 1.5rem;
@@ -179,13 +205,12 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 60%;
+    max-width: 70%;
     text-align: center;
 }
 .img2{
     display: flex;
     justify-content: center;
-    
 }
 
 #youtube{
@@ -278,4 +303,494 @@ input[type="text"], textarea[name="message"], input[type="email"] {
 #footerinline article{
     display: flex;
     justify-content: flex-end;
+}
+
+.hbar{
+    display: none;
+}
+/* General Image Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#first, #intro, #main1, #main2, footer{
+    overflow: hidden;
+}
+
+/*laptops*/
+@media only screen and (max-width: 1400px){
+    #out2 #in2 p {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+    #out2 {
+        font-size: 1.2rem;
+    }
+    #first {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #out2 #in2 {
+        width: 90%;
+    }
+
+     #main1 p, #main2 p{
+        font-size: 1.2rem;
+        margin: auto;
+     }
+
+     .redlink{
+        margin: auto;
+     }
+
+}
+/*larger tablets*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+
+    #first {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+    #intro{
+        height: 60vh;
+        font-size: 1rem;
+    }
+
+    #intro aside{
+        display: flex;
+        justify-content: center;
+        width: 60vw;
+    }
+
+    
+     #main1 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    #media1, #media2 {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0; 
+        background-color: black;
+    }
+
+    .text, .img {
+        max-width: 50%; 
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+
+    #main2 {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #media3, #media4 {
+        display: flex !important;
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0;
+    }
+
+    .text2, .img2 {
+        max-width: 50% !important; 
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+
+    .redlink{
+        margin-bottom: auto;
+     }
+
+     
+
+    .redlink2{
+        margin-bottom: auto;
+     }
+
+     .hbar{
+        display: flex;
+        height: 2.5vh;
+        color: black;
+     }
+
+     
+}
+/*smaller tablets*/
+@media only screen and (min-width: 700px) and (max-width: 999px){
+
+    #navbar li{
+        max-width: 20%;
+        display: inline-block !important;
+    }
+    #navbar a{
+        font-size: 1.1rem;
+        text-decoration: underline;
+    }
+    #navlogo{
+        height: 7vh;
+        width: 20vw !important;
+    }
+
+    #first {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+    #intro{
+        height: 60vh;
+    }
+
+    #intro aside{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    #intro p{
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+    #main1 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    #media1, #media2 {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0; 
+        background-color: black;
+    }
+
+    .text, .img {
+        max-width: 50%; 
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+
+    #main2 {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #media3, #media4 {
+        display: flex !important;
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0;
+    }
+
+    .text2, .img2 {
+        max-width: 50% !important; 
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+
+    .redlink{
+        margin-bottom: auto;
+     }
+
+     
+
+    .redlink2{
+        margin-bottom: auto;
+     }
+
+     .hbar{
+        display: flex;
+        height: 2.5vh;
+        color: black;
+     } 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 699px){
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        width: 20px; 
+        height: 18px; 
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hamburger div {
+        height: 1vh; 
+    }
+
+    #first{
+        background-image: url("road.JPG");
+        background-position: center;
+    }
+    #in1 p, #in2 p{
+        font-size: 1.1rem;
+    }
+    #intro h2{
+        font-size: 1.1rem !important;
+    }
+    #intro aside{
+        width: 60%;
+        overflow: hidden;
+    }
+    #intro p{
+        font-size: 1rem !important;
+    }
+    #main1 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    #media1, #media2 {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0; 
+        background-color: black;
+    }
+    .text, .img {
+        max-width: 100%; 
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+    #media1 img{
+        height: 50vh;
+        width: 100vw;
+    }
+    .text{
+        padding-top: 13%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+        font-size: 1.3rem;
+    }
+    .text section p{
+        font-size: 0.95rem !important;
+    }
+    #main2 {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #media3, #media4 {
+        display: flex !important;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100%; 
+        padding: 10px 0;
+    }
+
+    #media3 h2{
+        font-size: 1.35rem;
+    }
+    #media4{
+        margin-right: 1%;
+    }
+    .text2, .img2 {
+        max-width: 100% !important; 
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .text2 section p{
+        font-size: 16px !important;
+    }
+
+    .redlink{
+        margin-bottom: auto;
+        font-size: 14px;
+        padding-top: 5%;
+     }
+
+     
+
+    .redlink2{
+        margin-bottom: auto;
+        font-size: 14px;
+     }
+
+     .hbar{
+        display: flex;
+        height: 2.5vh;
+        color: black;
+     }
+     
+     footer {
+        padding: 1%; 
+        font-size: 0.9rem; 
+    }
+
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+
+    
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+
+    
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+
+    
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+
+    #footerinline a img{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerinline p{
+        font-size: 1.2rem;
+    }
 }
