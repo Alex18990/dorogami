@@ -22,7 +22,31 @@ nav{
 #navbar a:hover{
     color: orange;
 }
+#hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+.menu.active {
+    display: block;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -217,4 +241,691 @@ input[type="text"], textarea[name="message"], input[type="email"] {
 #footerinline article{
     display: flex;
     justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 1500px){
+    #article2{
+        width: 100vw !important;
+    }
+    footer{
+        padding-top: 15% !important;
+    }
+    #float8, #float7{
+        bottom:-145%;
+    }
+}
+@media only screen and (max-width:1200px){
+    html, body {
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #float8, #float7{
+        bottom:-142%;
+    }
+    #float5{
+        bottom: -95%
+    }
+    #float6{
+        bottom: -85%;
+    }
+    #float3{
+        bottom: -48%;
+    }
+    #float4{
+        bottom: -41%;
+    }
+    #float1{
+        bottom: 2%;
+    }
+    #float2{
+        bottom: 5%;
+    }
+}
+@media only screen and (max-width:1100px){
+    #float8, #float7{
+        bottom:-136%;
+    }
+    #float5{
+        bottom: -90%
+    }
+    #float3{
+        bottom: -45%;
+    }
+    #float4{
+        bottom: -41%;
+    }
+    #float1{
+        bottom: 5%;
+    }
+    #float2{
+        bottom: 5%;
+    }
+}
+@media only screen and (max-width:1000px){
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1;
+    }
+    nav img{
+        height: 10vh !important;
+        width: 15vw !important;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #hamburger div {
+        height: 1vh;
+        width: 3vw;
+    }
+    .menu {
+        height: 18vh;
+        display: none; 
+        position: absolute;
+        top: 10%; 
+        background-color: white;
+        list-style: none;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu.active {
+        display: block;
+    }
+    .menu li{
+        display: block;
+        color: black !important;
+        font-size: 1.4rem;
+    }
+    #menu a{
+        text-decoration: none !important;
+    }
+}
+@media only screen and (max-width: 999px){
+    #article2 p{
+        font-size: 6rem !important;
+    }
+    .hold{
+        flex-direction: column !important;
+    }
+    .hold .imagetext{
+        padding-bottom: 5% !important;
+    }
+    .imagetext{
+        width: 100vw;
+    }
+    .imagetext img{
+        width: 40vw !important;
+    }
+    #float1{
+        height: 25vh !important;
+        width: 35vw !important;
+        left:50% !important;
+        bottom: 15%;
+    }
+    #float2{
+        height: 25vh !important;
+        width: 35vw !important;
+        left: 55% !important;
+        bottom: -35%;
+    }
+    #float3{
+        height: 30vh !important;
+        width: 35vw !important;
+        left: 50% !important;
+        bottom: -80%;
+    }
+    #float4{
+        height: 25vh !important;
+        width: 30vw !important;
+        left: 50% !important;
+        bottom: -125%;
+    }
+    #float5{
+        height: 30vh !important;
+        width: 38vw !important;
+        left: 50% !important;
+        bottom: -180%;
+    }
+    #float6{
+        height: 30vh !important;
+        width: 38vw !important;
+        left: 50% !important;
+        bottom: -225%;
+    }
+    #float7{
+        height: 33vh !important;
+        width: 35vw !important;
+        left: 55% !important;
+        bottom: -270%;
+    }
+    .float p{
+        font-size: 0.9rem !important;
+    }
+    #float8{
+        height: 33vh !important;
+        width: 35vw !important;
+        left: 50% !important;
+        bottom: -320%;
+    }
+    .float h2{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1;
+    }
+    nav img{
+        height: 10vh !important;
+        width: 15vw !important;
+    }
+    #navbar {
+        display: flex; 
+    }
+
+    #navlogo {
+        display: block; 
+        height: 5vh;
+        margin-right: auto; 
+    }
+    
+    #navbar li:not(:first-child) {
+        display: none; 
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        z-index: 10; 
+    }
+
+    #hamburger div {
+        height: 1vh;
+        width: 3vw;
+    }
+    .menu {
+        height: 23vh;
+        display: none; 
+        position: absolute;
+        top: 80px; 
+        right: 20px;
+        background-color: white;
+        list-style: none;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu.active {
+        display: block;
+    }
+    .menu li{
+        display: block;
+        color: black !important;
+        font-size: 2rem;
+    }
+    #menu a{
+        text-decoration: none !important;
+    }
+    footer{
+        width: 100vw;
+    }
+}
+@media only screen and (max-width: 700px){
+    nav img{
+        width: 30vw !important;
+    }
+    .imagetext img{
+        width: 50vw !important;
+    }
+    .imagetext{
+        margin-bottom: 35%;
+    }
+    #float1{
+        left: 40% !important;
+        bottom: -15%;
+    }
+    #float2{
+        left: 40% !important;
+        bottom: -90%;
+    }
+    #float3{
+        width: 45vw !important;
+        height: 25vh !important;
+        left: 33% !important;
+        bottom: -150%;
+    }
+    #float4{
+        bottom: -220%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -295%;
+        left: 40% !important;
+    }
+    #float6{
+        bottom: -360%;
+        left: 40% !important;
+    }
+    #float7{
+        bottom: -440%;
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+        bottom: -510%;
+    }
+    footer {
+        padding: 1%; 
+    }
+    #footerp1 article p,
+    #footcont {
+        font-size: 0.9rem; 
+        line-height: 1.2; 
+    }
+    #begin {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 90%; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea[name="message"] {
+        width: 100%; 
+        font-size: 1.2rem; 
+        padding: 12px; 
+        height: 50px; 
+        box-sizing: border-box;
+    }
+    .form-submit button {
+        font-size: 0.9rem;
+        padding: 5px 10px; 
+    }
+    #footerinline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+    }
+    #footerinline img {
+        width: 20px; 
+        height: 20px;
+    }
+    .input-wrapper input{
+        width: 30vw;
+        height: 4vh;
+    }
+    #footerinline a img{
+        width: 8vw;
+        height: 5vh;
+        margin-top: 5%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #footerinline p{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 660px){
+    #float1{
+        left: 40% !important;
+        bottom: -10%;
+    }
+    #float2{
+        left: 40% !important;
+        bottom: -75%;
+    }
+    #float4{
+        bottom: -210%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -285%;
+        left: 40% !important;
+        width: 45vw !important;
+    }
+    #float6{
+        bottom: -350%;
+        left: 40% !important;
+    }
+    #float7{
+        bottom: -425%;
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+        bottom: -490%;
+    }
+}
+@media only screen and (max-width: 600px){
+    #menu li a{
+        font-size: 1.3rem !important;
+    }
+    #float1{
+        left: 40% !important;
+        bottom: -0%;
+    }
+    #float2{
+        left: 40% !important;
+        bottom: -65%;
+    }
+    #float3{
+        width: 45vw !important;
+        height: 27vh !important;
+        left: 33% !important;
+        bottom: -140% !important;
+    }
+    #float4{
+        bottom: -200%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -270%;
+        left: 40% !important;
+        width: 45vw !important;
+    }
+    #float6{
+        bottom: -340%;
+        left: 40% !important;
+    }
+    #float7{
+        bottom: -405%;
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 45vw !important;
+        height: 25vh !important;
+        bottom: -470%;
+    }
+    #footerinline p{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    #article2 p{
+        font-size: 4.5rem !important;
+    }
+    #float1{
+        height: 28vh !important;
+        width: 40vw !important;
+    }
+    #float2{
+        left: 40% !important;
+        bottom: -65%;
+    }
+    #float3{
+        width: 45vw !important;
+        height: 30vh !important;
+        left: 33% !important;
+        bottom: -133% !important;
+    }
+    #float4{
+        bottom: -190%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -260%;
+        left: 40% !important;
+        width: 45vw !important;
+    }
+    #float6{
+        bottom: -320%;
+        left: 40% !important;
+    }
+    #float7{
+        bottom: -390%;
+        left: 35% !important;
+        width: 45vw !important;
+        height: 28vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 45vw !important;
+        height: 30vh !important;
+        bottom: -455%;
+    }
+}
+@media only screen and (max-width: 500px){
+    #article2 p{
+        font-size: 3rem !important;
+    }
+    .imagetext img{
+        width: 60vw !important;
+        margin-right: 15%;
+    }
+    #float1{
+        height: 28vh !important;
+    }
+    #float2{
+        height: 27vh !important;
+        left: 40% !important;
+        bottom: -55%;
+    }
+    #float3{
+        width: 50vw !important;
+        height: 33vh !important;
+        left: 33% !important;
+        bottom: -125% !important;
+    }
+    #float4{
+        width: 40vw !important;
+        bottom: -180%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -240%;
+        left: 40% !important;
+
+        width: 50vw !important;
+    }
+    #float6{
+        bottom: -300%;
+        left: 40% !important;
+    }
+    #float7{
+        bottom: -368%;
+        left: 35% !important;
+        width: 50vw !important;
+        height: 30vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 45vw !important;
+        height: 30vh !important;
+        bottom: -420%;
+    }
+}
+@media only screen and (max-width: 450px){
+    #float1{
+        height: 30vh !important;
+        width: 50vw !important;
+    }
+    #float2{
+        height: 29vh !important;
+        width: 45vw !important;
+        left: 40% !important;
+        bottom: -55%;
+    }
+    #float3{
+        width: 50vw !important;
+        height: 33vh !important;
+        left: 33% !important;
+        bottom: -115% !important;
+    }
+    #float4{
+        width: 40vw !important;
+        bottom: -170%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -230%;
+        left: 40% !important;
+        width: 45vw !important;
+    }
+    #float6{
+        bottom: -290%;
+        left: 55% !important;
+    }
+    #float7{
+        bottom: -353%;
+        left: 35% !important;
+        width: 55vw !important;
+        height: 30vh !important;
+    }
+    #float8{
+        left: 35% !important;
+        width: 50vw !important;
+        height: 30vh !important;
+        bottom: -405%;
+    }
+}
+@media only screen and (max-width: 400px){
+    #float1{
+        left: 20% !important;
+        height: 30vh !important;
+        width: 55vw !important;
+    }
+    #float2{
+        height: 29vh !important;
+        width: 45vw !important;
+        left: 40% !important;
+        bottom: -55%;
+    }
+    #float3{
+        width: 65vw !important;
+        height: 33vh !important;
+        left: 25% !important;
+        bottom: -110% !important;
+    }
+    #float4{
+        width: 40vw !important;
+        bottom: -160%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -220%;
+        left: 40% !important;
+        width: 50vw !important;
+    }
+    #float5 h2{
+        font-size: 0.9rem;
+    }
+    #float6{
+        bottom: -280%;
+        left: 55% !important;
+    }
+    #float7{
+        bottom: -335%;
+        left: 28% !important;
+        width: 65vw !important;
+        height: 30vh !important;
+    }
+    #float8{
+        left: 28% !important;
+        width: 65vw !important;
+        height: 30vh !important;
+        bottom: -385%;
+    }
+}
+@media only screen and (max-width: 350px){
+    #float1{
+        left: 20% !important;
+        height: 30vh !important;
+        width: 65vw !important;
+    }
+    #float2{
+        height: 29vh !important;
+        width: 45vw !important;
+        left: 40% !important;
+        bottom: -45%;
+    }
+    #float3{
+        width: 65vw !important;
+        height: 33vh !important;
+        left: 25% !important;
+        bottom: -105% !important;
+    }
+    #float4{
+        width: 45vw !important;
+        bottom: -160%;
+        left: 40% !important;
+    }
+    #float5{
+        bottom: -210%;
+        left: 40% !important;
+        width: 55vw !important;
+    }
+    #float5 h2{
+        font-size: 0.9rem;
+    }
+    #float6{
+        bottom: -260%;
+        left: 55% !important;
+    }
+    #float7{
+        bottom: -321%;
+        left: 28% !important;
+        width: 65vw !important;
+        height: 30vh !important;
+    }
+    #float8{
+        left: 28% !important;
+        width: 65vw !important;
+        height: 30vh !important;
+        bottom: -383%;
+    }
+    footer{
+        padding-top: 20% !important;
+    }
+    
 }
