@@ -662,6 +662,9 @@ footer .input-wrapper label{
     }
     @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
+      #p2{
+          margin-top: -20em !important;
+      }
     #p22 {
       display: flex !important;
       flex-direction: column !important;
