@@ -675,6 +675,9 @@ footer .input-wrapper label{
     #p22, #mainpage, body, html {
       overflow: visible !important;
     }
+    #p22 img {
+      display: none !important;
+    }
 }
 
 }
