@@ -660,6 +660,19 @@ footer .input-wrapper label{
     #p32{
         margin-top: 13em !important;
     }
+    @media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    body::before {
+      content: "Safari hack active";
+      display: block;
+      background: red;
+      color: white;
+      text-align: center;
+      z-index: 9999;
+    }
+  }
+}
+
 }
 @media only screen and (max-width: 1500px){
     #p1{
