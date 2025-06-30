@@ -661,8 +661,9 @@ footer .input-wrapper label{
     }
     @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
-      #p2{
-          padding-top: 5em !important;
+    #p2{
+        margin-top: 10em !important;
+        padding-top: 5em !important;
       }
     #p22 {
       display: flex !important;
